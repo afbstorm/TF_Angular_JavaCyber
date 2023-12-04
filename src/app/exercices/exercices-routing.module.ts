@@ -2,10 +2,16 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ExercicesComponent } from './exercices.component';
 import { ChronoComponent } from './chrono/chrono.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { ArticleComponent } from './shopping-cart-2/article/article.component';
+import {Article2Component} from "./shopping-cart-3/article/article2.component";
 
 const routes: Routes = [
   {path: '', component: ExercicesComponent, children: [
-    {path: 'chrono', component: ChronoComponent}
+    {path: 'chrono', component: ChronoComponent},
+    {path: 'shoppingCart', component: ShoppingCartComponent},
+    {path: 'shoppingCartV2', component: ArticleComponent},
+    {path: 'shoppingCartV3', component: Article2Component}
   ]}
 ];
 

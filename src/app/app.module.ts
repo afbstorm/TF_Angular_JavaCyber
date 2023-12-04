@@ -12,7 +12,7 @@ import { ButtonModule } from 'primeng/button';
   declarations: [
     AppComponent,
     HomeComponent,
-    NavComponent
+    NavComponent,
   ],
   imports: [
     BrowserModule,

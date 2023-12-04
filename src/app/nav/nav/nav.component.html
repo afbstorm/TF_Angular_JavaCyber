@@ -1,32 +1,34 @@
+<ul id="demos" class="dropdown-content">
+    <li><a routerLink="demos/bindings">Bindings</a></li>
+    <li><a routerLink="demos/pipes">Pipes</a></li>
+    <li><a routerLink="demos/directives">Directives</a></li>
+    <li><a routerLink="demos/parent">Input-Output</a></li>
+    <li><a routerLink="demos/services">Service Injection</a></li>
+</ul>
+
+<ul id="exos" class="dropdown-content">
+    <li><a routerLink="exercices/chrono">Chrono</a></li>
+    <li><a routerLink="exercices/shoppingCart">Shopping cart</a></li>
+    <li><a routerLink="exercices/shoppingCartV2">Shopping cart - in / out</a></li>
+    <li><a routerLink="exercices/shoppingCartV3">Shopping cart - services</a></li>
+</ul>
+
 <nav>
-    <ul class="navbar">
-        <li class="nav-item">
-            <a routerLink="home">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a routerLink="demos">Demos</a>
-            <ul class="dropdown-menu">
-                <li>
-                    <a routerLink="demos/bindings">Bindings</a>
-                </li>
-                <li>
-                    <a routerLink="demos/pipes">Pipes</a>
-                </li>
-                <li>
-                    <a routerLink="demos/directives">Directives</a>
-                </li>
-                <li>
-                    <a routerLink="demos/parent">Input-Output</a>
-                </li>
-            </ul>
-        </li>
-        <li class="nav-item dropdown">
-            <a routerLink="exercices">Exercices</a>
-            <ul class="dropdown-menu">
-                <li>
-                    <a routerLink="exercices/chrono">Chrono</a>
-                </li>
-            </ul>
-        </li>
-    </ul>
+    <div class="nav-wrapper">
+        <ul class="right hide-on-med-and-down">
+            <li><a routerLink="home">Home</a></li>
+            <li>
+                <a class="dropdown-trigger" data-target="demos">
+                Demos
+                <i class="material-icons right">arrow_drop_down</i>
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-trigger" data-target="exos">
+                    Exercices
+                <i class="material-icons right">arrow_drop_down</i>
+                </a>
+            </li>
+        </ul>
+    </div>
 </nav>

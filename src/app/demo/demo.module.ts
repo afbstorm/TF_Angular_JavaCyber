@@ -9,6 +9,7 @@ import { LetterPipe } from './letter-to-number.pipe';
 import { DirectivesComponent } from './directives/directives.component';
 import { ChildComponent } from './input-output/child/child.component';
 import { ParentComponent } from './input-output/parent/parent.component';
+import { FakeAuthComponent } from './services/fake-auth/fake-auth.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ParentComponent } from './input-output/parent/parent.component';
     LetterPipe,
     DirectivesComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    FakeAuthComponent
   ],
   imports: [
     CommonModule,
